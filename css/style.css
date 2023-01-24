@@ -13,9 +13,10 @@ body {
         font-size: 14px;
         color: var(--title-text-color);
         background-color: var(--white-color);
+        letter-spacing: 0,03em;
       }
 header {
-    background: #FFFFFF;
+    background:var(--white-color);
 }
 .link {
     text-decoration: none;
@@ -34,11 +35,10 @@ header {
     color: var(--accent-color);
 }
 .logo-header {
-color:#000000;
+color: var(--text-black);
 }
 .navigation-link {
     font-family: 'Roboto';
-    font-style: medium;
     font-weight: 500;
     line-height: calc(16/14);
     color: var(--title-text-color);
@@ -48,7 +48,7 @@ color:#000000;
     color: var(--accent-color);
     }
 .logo-footer {
-   color: #FFFFFF;
+   color: var(--white-color);
 }
 /* Contacts */
 
@@ -78,6 +78,7 @@ color:#000000;
     text-transform: uppercase;
     text-align: center;
     color: var(--white-color);
+    letter-spacing: 0,06em;
   }
 
   .btn-service {
@@ -89,9 +90,10 @@ color:#000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    letter-spacing: 0,06em;
 }
 .section-people {
-background: #F5F4FA;
+background: var(--background-team-buttons);
 }
 .post-section {
     background-color: var(--background-team-buttons);
@@ -188,6 +190,8 @@ text-transform: uppercase;
     color: var(--title-text-color);
     background-color: var(--background-team-buttons);
     cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0,03em;
   }
   
   .button-filter:hover,
@@ -210,6 +214,7 @@ text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36/18);
+    letter-spacing: 0,06em;
     }
       
 .project-desc {
