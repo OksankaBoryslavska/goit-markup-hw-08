@@ -247,6 +247,8 @@ body {
 
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -280,6 +282,10 @@ body {
 /* Портфоліо */
 
 /* кнопки-фільтри */
+.buttons-list {
+  display: flex;
+  justify-content: center;
+}
 .buttons-list > li {
   margin-right: 8px;
 }
@@ -320,7 +326,7 @@ body {
   background-color: var(--white-color);
 }
 .projects > li{
-    
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 .project-title {
