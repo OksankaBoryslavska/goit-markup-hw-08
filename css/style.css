@@ -8,7 +8,7 @@
   --background-team-buttons: #f5f4fa;
   --text-black: #000000;
   --mail-tel-color: rgba(255, 255, 255, 0.6);
-  --background-img-projekt: #EEEEEE
+  --background-img-projekt: #eeeeee;
 }
 *,
 *::before,
@@ -49,6 +49,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.header-section {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -87,7 +90,7 @@ body {
   padding-bottom: 32px;
 }
 
-.navigation-link-list :not(:last-child)  {
+.navigation-link-list :not(:last-child) {
   margin-right: 50px;
 }
 
@@ -106,7 +109,7 @@ body {
   margin-left: auto;
 }
 
-.contacts :not(:last-child)  {
+.contacts :not(:last-child) {
   margin-right: 50px;
 }
 .contacts .link {
@@ -126,7 +129,6 @@ body {
 
 .container-hero {
   text-align: center;
-
 }
 
 .hero {
@@ -157,15 +159,13 @@ body {
 }
 
 .list-works {
-    display: flex;
-
+  display: flex;
 }
-.list-works :not(:last-child)  {
+.list-works :not(:last-child) {
   margin-right: 50px;
 }
 .works-kard {
   width: 270px;
-
 }
 .works-tytel {
   line-height: calc(16 / 14);
@@ -189,7 +189,7 @@ body {
 .work-list {
   display: flex;
 }
-.work-list :not(:last-child)  {
+.work-list :not(:last-child) {
   margin-right: 50px;
 }
 .we-doing-container {
@@ -325,7 +325,7 @@ body {
   padding-left: 0px;
   background-color: var(--white-color);
 }
-.projects > li{
+.projects > li {
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -347,4 +347,5 @@ body {
   border-left: 1px solid var(--background-img-projekt);
   border-right: 1px solid var(--background-img-projekt);
   border-bottom: 1px solid var(--background-img-projekt);
-  padding: 24px 20px;}
+  padding: 24px 20px;
+}
