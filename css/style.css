@@ -9,15 +9,34 @@
   --text-black: #000000;
   --mail-tel-color: rgba(255, 255, 255, 0.6);
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  display: block;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: var(--title-text-color);
   background-color: var(--white-color);
   letter-spacing: 0, 03em;
-}
-header {
-  background: var(--white-color);
 }
 .link {
   text-decoration: none;
