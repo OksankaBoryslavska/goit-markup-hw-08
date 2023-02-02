@@ -8,6 +8,7 @@
   --background-team-buttons: #f5f4fa;
   --text-black: #000000;
   --mail-tel-color: rgba(255, 255, 255, 0.6);
+  --background-img-projekt: #EEEEEE
 }
 *,
 *::before,
@@ -38,6 +39,20 @@ body {
   background-color: var(--white-color);
   letter-spacing: 0, 03em;
 }
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .link {
   text-decoration: none;
 }
@@ -53,17 +68,29 @@ body {
   color: var(--text-black);
   text-decoration: none;
   color: var(--accent-color);
+  margin-right: 93px;
 }
 .logo-header {
   color: var(--text-black);
 }
+.navigation-link-list {
+  display: flex;
+}
 .navigation-link {
+  display: block;
   font-family: "Roboto";
   font-weight: 500;
   line-height: calc(16 / 14);
   color: var(--title-text-color);
   cursor: pointer;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
+.navigation-link-list :not(:last-child)  {
+  margin-right: 50px;
+}
+
 .navigation-link:hover {
   color: var(--accent-color);
 }
@@ -74,7 +101,14 @@ body {
   color: var(--white-color);
 }
 /* Contacts */
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
 
+.contacts :not(:last-child)  {
+  margin-right: 50px;
+}
 .contacts .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -90,6 +124,11 @@ body {
 
 /* Hero */
 
+.container-hero {
+  text-align: center;
+
+}
+
 .hero {
   background-color: var(--background-color);
 }
@@ -102,6 +141,7 @@ body {
   text-align: center;
   color: var(--white-color);
   letter-spacing: 0, 06em;
+  padding-bottom: 30px;
 }
 
 .btn-service {
@@ -115,20 +155,29 @@ body {
   border: none;
   letter-spacing: 0, 06em;
 }
-.section-people {
-  background: var(--background-team-buttons);
+
+.list-works {
+    display: flex;
+
 }
-.post-section {
-  background-color: var(--background-team-buttons);
+.list-works :not(:last-child)  {
+  margin-right: 50px;
+}
+.works-kard {
+  width: 270px;
+
 }
 .works-tytel {
   line-height: calc(16 / 14);
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .works-post {
   line-height: calc(24 / 14);
   color: var(--primary-text-color);
+  margin: 0;
 }
 .doing-tytle {
   font-weight: 700;
@@ -137,15 +186,41 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.work-list {
+  display: flex;
+}
+.work-list :not(:last-child)  {
+  margin-right: 50px;
+}
+.we-doing-container {
+  text-align: center;
+}
+.we-doing-img {
+  display: block;
+  margin-top: 50px;
+}
 /*TEAM*/
 .section-team {
   background-color: var(--background-team-buttons);
+}
+.container-team {
+  text-align: center;
 }
 .team-member {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
+  background-color: var(--white-color);
+  margin-top: 50px;
 }
 
 .position {
@@ -153,6 +228,7 @@ body {
   line-height: calc(19 / 16);
   color: var(--primary-text-color);
   text-align: center;
+  margin-bottom: 30px;
 }
 /*hiden*/
 .visually-hidden {
@@ -204,7 +280,9 @@ body {
 /* Портфоліо */
 
 /* кнопки-фільтри */
-
+.buttons-list > li {
+  margin-right: 8px;
+}
 .button-filter {
   font-weight: 500;
   font-size: 16px;
@@ -215,6 +293,10 @@ body {
   cursor: pointer;
   font-family: inherit;
   letter-spacing: 0, 03em;
+  border-radius: 4px;
+  border: 0px;
+  padding: 6px 27px 6px 27px;
+  text-align: center;
 }
 
 .button-filter:hover,
@@ -230,19 +312,33 @@ body {
   background-color: var(--accent-color);
 }
 
-.project {
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
   background-color: var(--white-color);
 }
-
+.projects > li{
+    
+  margin-bottom: 30px;
+}
 .project-title {
-  font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: calc(36 / 18);
   letter-spacing: 0, 06em;
-}
-
-.project-desc {
-  font-size: 16px;
-  line-height: calc(30 / 16);
   color: var(--primary-text-color);
 }
+
+.project-example {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(30 / 16);
+  color: var(--title-text-color);
+  letter-spacing: 0, 03em;
+}
+.grey-border-box {
+  border-left: 1px solid var(--background-img-projekt);
+  border-right: 1px solid var(--background-img-projekt);
+  border-bottom: 1px solid var(--background-img-projekt);
+  padding: 24px 20px;}
