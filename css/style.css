@@ -170,7 +170,8 @@ body {
   cursor: pointer;
 }
 .btn-service:active,
-.btn-service:focus {
+.btn-service:focus,
+.btn-service:hover {
   background-color: var(--bg-color-button);
 }
 .list-works {
