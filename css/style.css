@@ -58,6 +58,9 @@ body {
 }
 .link {
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0, 02em;
 }
 .list {
   list-style: none;
@@ -164,6 +167,7 @@ body {
   text-align: center;
   width: 216px;
   padding: 10px 32px 10px 32px;
+  cursor: pointer;
 }
 .btn-service:active,
 .btn-service:focus {
@@ -172,11 +176,10 @@ body {
 .list-works {
   display: flex;
 }
-.list-works :not(:last-child) {
-  margin-right: 50px;
-}
-.works-kard {
+
+.works-kard :not(:last-child) {
   width: 270px;
+  margin-right: 50px;
 }
 .works-tytel {
   line-height: calc(16 / 14);
@@ -216,6 +219,8 @@ body {
 }
 .we-doing-img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /*TEAM*/
 .section-team {
@@ -263,7 +268,6 @@ body {
   line-height: calc(19 / 16);
   color: var(--primary-text-color);
   text-align: center;
-  margin-bottom: 30px;
 }
 /*hiden*/
 .visually-hidden {
@@ -295,7 +299,9 @@ body {
   color: var(--white-color);
   text-decoration: none;
 }
-
+.logo-in-footer {
+  padding-bottom: 20px;
+}
 .address-list .map {
   font-style: normal;
   line-height: calc(24 / 14);
