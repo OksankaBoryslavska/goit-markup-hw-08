@@ -59,7 +59,6 @@ body {
 .link {
   text-decoration: none;
   font-size: 14px;
-  font-weight: 500;
   letter-spacing: 0, 02em;
 }
 .list {
@@ -302,6 +301,7 @@ body {
 }
 .logo-in-footer {
   padding-bottom: 20px;
+  display: flex;
 }
 .address-list .map {
   font-style: normal;
@@ -328,7 +328,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.buttons-list > li {
+.buttons-list :not(:last-child) {
   margin-right: 8px;
 }
 .button-filter {
