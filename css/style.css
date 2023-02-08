@@ -62,8 +62,6 @@ body {
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 0, 02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .list {
   list-style: none;
@@ -116,6 +114,10 @@ body {
 .icon-header {
   margin-right: 10px;
   fill: var(--primary-text-color);
+}
+.header-tel,
+.header-mail {
+  display: flex;
 }
 .header-tel:hover .icon-header,
 .header-tel:focus .icon-header {
@@ -236,14 +238,13 @@ body {
 }
 
 .section-two-icon {
-  width: 264px;
   height: 112px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f4f4fd;
   border-radius: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
 }
 .section-two-icon:is(:hover, :focus) {
   fill: var(--bg-color-button);
@@ -265,6 +266,10 @@ body {
   justify-content: space-between;
 }
 .works-kard {
+  margin-right: 30px;
+  width: 270px;
+}
+.works-kard:not(:last-of-type) {
   margin-right: 30px;
 }
 .we-doing {
@@ -324,6 +329,7 @@ body {
   line-height: calc(19 / 16);
   color: var(--primary-text-color);
   text-align: center;
+  padding-bottom: 16px;
 }
 /*hiden*/
 .visually-hidden {
@@ -368,7 +374,6 @@ body {
 }
 /* ------------CUSTOMERS */
 .customers {
-  width: 1158px;
   padding: 120px 15px;
   background: var(--white-color);
   margin-left: auto;
@@ -383,16 +388,16 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 72px;
+  margin-bottom: 50px;
 }
 .customers-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 30px;
 }
 .customers-item {
-  width: calc((100% - 120px) / 6);
-  height: 88px;
+  width: calc((100% - 30px * 5) / 6);
+  height: 92px;
 }
 .customers-link {
   width: 100%;
@@ -432,6 +437,7 @@ body {
 .logo-in-footer {
   padding-bottom: 20px;
   display: flex;
+  margin-right: 0 auto;
 }
 .address-list .map {
   font-style: normal;
@@ -459,14 +465,8 @@ body {
 .social {
   margin-left: 60px;
   width: 206px;
-  height: 80px;
 }
-.social-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
+
 .social-tittle {
   font-weight: 700;
   line-height: 14px;
