@@ -95,6 +95,9 @@ body {
   cursor: pointer;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link-list :not(:last-child) {
@@ -119,6 +122,9 @@ body {
 .header-mail {
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel:hover .icon-header,
 .header-tel:focus .icon-header {
@@ -211,6 +217,9 @@ body {
   width: 216px;
   padding: 10px 32px 10px 32px;
   cursor: pointer;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-service:active,
 .btn-service:focus,
@@ -233,7 +242,7 @@ body {
   pointer-events: none;
   opacity: 0;
 
-  transition-delay: 500ms;
+  transition-delay: 250ms;
 }
 
 .modal-box {
@@ -416,7 +425,11 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .section-four-icon {
   fill: currentColor;
 }
@@ -462,6 +475,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon {
   fill: var(--fil-icon-color);
@@ -500,6 +516,9 @@ body {
   line-height: calc(24 / 14);
   color: var(--white-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list .mail-tel {
@@ -507,6 +526,9 @@ body {
   line-height: calc(24 / 14);
   color: var(--mail-tel-color);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list .mail-tel:hover,
@@ -548,6 +570,9 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon {
   fill: var(--white-color);
@@ -581,6 +606,9 @@ body {
   border: 0px;
   padding: 6px 27px 6px 27px;
   text-align: center;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:hover,
@@ -655,6 +683,9 @@ body {
   display: block;
   color: #434455;
   outline: transparent;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:is(:hover, :focus) {
@@ -674,7 +705,7 @@ body {
 
   transition-property: transform;
   transform: translateY(100%);
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
