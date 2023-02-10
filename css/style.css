@@ -91,7 +91,7 @@ body {
   font-family: "Roboto";
   font-weight: 500;
   line-height: calc(16 / 14);
-  color: var(--title-text-color);
+  color: #212121;
   cursor: pointer;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -305,6 +305,26 @@ body {
   line-height: calc(24 / 14);
   color: var(--primary-text-color);
   margin: 0;
+}
+.we-doing-img {
+  position: relative;
+}
+.we-doing-img > img {
+  display: block;
+}
+.works-descrip {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 27px;
 }
 
 .section-two-icon {
