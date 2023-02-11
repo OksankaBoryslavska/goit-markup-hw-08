@@ -105,7 +105,6 @@ body {
 .nav-list {
   list-style: none;
   display: flex;
-  margin-left: 93px;
   gap: 46px;
 }
 
