@@ -929,12 +929,6 @@ body {
 }
 .project-list-img {
   width: 370px;
-  display: block;
-  margin: 0;
-  column-gap: 24px;
-  row-gap: 48px;
-  /* margin-right: 24px;
-  margin-bottom: 48px; */
 }
 
 .project-example {
