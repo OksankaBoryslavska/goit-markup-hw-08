@@ -1,0 +1,27 @@
+// Logo
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: $blackColor;
+
+  &__highlight {
+    color: $highlightColor;
+  }
+
+  &__color {
+    color: $whiteColor;
+  }
+}
+
+// TABLET & DESKTOP RESPONSIVE
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
